@@ -207,3 +207,67 @@ footer{
   padding:40px;
   color:var(--muted);
 }
+
+
+.project-section{
+  margin-top:70px;
+}
+
+.project-section h3{
+  margin-bottom:18px;
+  font-size:1.6rem;
+}
+
+.horizontal-scroll{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;
+  padding-bottom:12px;
+  scroll-snap-type:x mandatory;
+}
+
+.horizontal-scroll::-webkit-scrollbar{
+  height:8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb{
+  background:var(--accent);
+  border-radius:10px;
+}
+
+.project-card{
+  min-width:280px;
+  background:var(--card);
+  border-radius:16px;
+  padding:22px;
+  scroll-snap-align:start;
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 35px rgba(0,0,0,.3);
+}
+
+.project-card h4{
+  margin-bottom:8px;
+}
+
+.project-card p{
+  font-size:.95rem;
+  opacity:.85;
+}
+
+.tag{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:.75rem;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.tag.active{background:#4ade80;color:#000}
+.tag.dev{background:#facc15;color:#000}
+.tag.closed{background:#f87171;color:#000}
+.tag.paused{background:#a1a1aa;color:#000}
