@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Proyectos</title>
+<title>Proyectos | VynexMC</title>
+
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -17,7 +19,7 @@
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">Sobre mí</a>
-    <a href="projects.html">Proyectos</a>
+    <a href="projects.html" class="active">Proyectos</a>
     <a href="experience.html">Experiencia</a>
     <a href="contact.html">Contacto</a>
   </div>
@@ -27,33 +29,72 @@
 
 <main>
 
-<h2 class="reveal">⭐ Featured Project</h2>
-<div class="card featured reveal">
-  <h3>AllIn1Plugin</h3>
-  <p>Plugin completo para Paper 1.20.6, con sistemas de economia, utilidades como /ec, /pv, /fly, /afk, y mucho mas! </p>
-</div>
+<section class="reveal">
+  <h2>Proyectos</h2>
+  <p class="subtitle">Algunos de los proyectos en los que he trabajado</p>
+</section>
 
-<h2 class="reveal" style="margin-top:70px">Plugins</h2>
-<ul class="reveal">
-  <li>AllIn1Plugin</li>
-  <li>SimpleRewards</li>
-</ul>
+<!-- SERVERS -->
+<section class="project-section reveal">
+  <h3>🖥️ Servidores</h3>
 
-<h2 class="reveal" style="margin-top:50px">Bots</h2>
-<ul class="reveal">
-  <li>NightCraft Bot</li>
-  <li>UtilitiBot</li>
-</ul>
+  <div class="horizontal-scroll">
+    <div class="project-card">
+      <h4>SkyCraft</h4>
+      <span class="tag closed">Cerrado</span>
+      <p>Servidor survival con sistemas personalizados.</p>
+    </div>
 
-<h2 class="reveal" style="margin-top:50px">Servers</h2>
-<ul class="reveal">
-  <li>SkyCraft (cerrado)</li>
-  <li>ArkMC (en desarrollo)</li>
-</ul>
+    <div class="project-card">
+      <h4>ArkMC</h4>
+      <span class="tag dev">En desarrollo</span>
+      <p>Servidor en desarrollo con mecánicas propias.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLUGINS -->
+<section class="project-section reveal">
+  <h3>🔌 Plugins</h3>
+
+  <div class="horizontal-scroll">
+    <div class="project-card">
+      <h4>AllIn1Plugin</h4>
+      <span class="tag active">Activo</span>
+      <p>Plugin multiuso disponible en Hangar.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>SimpleRewards</h4>
+      <span class="tag active">Activo</span>
+      <p>Sistema simple de recompensas para servidores.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOTS -->
+<section class="project-section reveal">
+  <h3>🤖 Bots de Discord</h3>
+
+  <div class="horizontal-scroll">
+    <div class="project-card">
+      <h4>NightCraft Bot</h4>
+      <span class="tag active">Activo</span>
+      <p>Bot de moderación y utilidades.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>UtilitiBot</h4>
+      <span class="tag paused">Pausado</span>
+      <p>Bot multipropósito actualmente pausado.</p>
+    </div>
+  </div>
+</section>
 
 </main>
 
 <footer>© 2026 VynexMC</footer>
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
