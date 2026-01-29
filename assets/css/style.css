@@ -192,7 +192,7 @@ h2{font-size:2.4rem;margin-bottom:30px}
 }
 
 .reveal{
-  opacity:0;
+  opacity:70;
   transform:translateY(30px);
   transition:1s;
 }
@@ -337,3 +337,4 @@ footer{
 .tag.dev{background:#facc15;color:#000}
 .tag.closed{background:#f87171;color:#000}
 .tag.paused{background:#a1a1aa;color:#000}
+
