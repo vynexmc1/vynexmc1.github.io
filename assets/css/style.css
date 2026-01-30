@@ -329,8 +329,24 @@ footer{
   animation:floatText 3s ease-in-out infinite;
 }
 
+.project-link{
+  display:block;
+}
+
+.project-link:hover{
+  text-decoration:none;
+}
+
+/* mantiene el hover aunque sea un <a> */
+.project-link:hover .project-card{
+  transform:translateY(-10px);
+  border-color:var(--accent);
+}
+
+
 @keyframes floatText{
   0%{transform:translateY(0)}
   50%{transform:translateY(-6px)}
   100%{transform:translateY(0)}
 }
+
