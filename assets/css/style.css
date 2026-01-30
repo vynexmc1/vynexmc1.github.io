@@ -132,11 +132,13 @@ h3{font-size:1.6rem;margin-bottom:18px}
 
 /* ===== GRID ===== */
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
 }
+
 
 /* ===== CARDS ===== */
 
@@ -347,4 +349,5 @@ footer{
 .tag.dev{background:#facc15;color:#000}
 .tag.closed{background:#f87171;color:#000}
 .tag.paused{background:#a1a1aa;color:#000}
+
 
