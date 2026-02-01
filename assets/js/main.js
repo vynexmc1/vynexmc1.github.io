@@ -1,8 +1,10 @@
 function revealElements(){
-  document.querySelectorAll('.reveal').forEach(el=>{
+  document.querySelectorAll('.reveal').forEach((el, index)=>{
     const top = el.getBoundingClientRect().top;
     if(top < window.innerHeight - 100){
-      el.classList.add('active');
+      setTimeout(() => {
+        el.classList.add('active');
+      }, index * 100); 
     }
   });
 }
