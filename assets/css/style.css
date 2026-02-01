@@ -157,12 +157,14 @@ section > .reveal{
   padding:30px;
   border-radius:18px;
   border:1px solid rgba(255,255,255,.06);
-  transition:.3s;
+  transition:all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
 }
 
 .card:hover{
   transform:translateY(-8px);
   border-color:var(--accent);
+  box-shadow:0 12px 40px rgba(0,0,0,0.2);
 }
 
 /* ===== BOTONES ===== */
@@ -329,6 +331,29 @@ footer{
   animation:floatText 3s ease-in-out infinite;
 }
 
+/* ===== CORE STUDIOS HIGHLIGHT ===== */
+
+.core-studios{
+  position:relative;
+  background:linear-gradient(135deg, var(--accent) 0%, rgba(108,242,194,0.1) 100%);
+  border:2px solid var(--accent);
+  box-shadow:0 0 30px rgba(108,242,194,0.3);
+}
+
+.core-studios::before{
+  content:"⭐ Destacado";
+  position:absolute;
+  top:-10px;
+  right:20px;
+  background:var(--accent);
+  color:#000;
+  padding:4px 12px;
+  border-radius:20px;
+  font-size:0.8rem;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
 .project-link{
   display:block;
 }
@@ -337,7 +362,6 @@ footer{
   text-decoration:none;
 }
 
-/* mantiene el hover aunque sea un <a> */
 .project-link:hover .project-card{
   transform:translateY(-10px);
   border-color:var(--accent);
@@ -348,5 +372,13 @@ footer{
   0%{transform:translateY(0)}
   50%{transform:translateY(-6px)}
   100%{transform:translateY(0)}
+}
+
+/* ===== CORE STUDIOS ASIDE ===== */
+
+.core-studios-aside{
+  margin:2rem 0;
+  display:flex;
+  justify-content:center;
 }
 
